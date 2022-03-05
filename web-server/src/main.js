@@ -15,7 +15,9 @@ const app = createApp(App)
 app.config.productionTip
 dayjs.locale('zh-cn');
 // 原型上添加全局字段方式变了
-app.config.globalProperties.$dayjs = dayjs
+// app.config.globalProperties.$dayjs = dayjs
+// 将electron配置为全局属性
+// app.config.globalProperties.$elec = window.electron
 // 引入路由、vuex、 antd
 antdUse(app)
 app.use(router)

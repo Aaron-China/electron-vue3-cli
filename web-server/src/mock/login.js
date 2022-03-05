@@ -23,6 +23,7 @@ const LOGIN = {
       { type: 'menu', path: '/socket/chat/user' },
       { type: 'menu', path: '/socket/chat/group' },
       { type: 'menu', path: '/socket/largeFile' },
+      { type: 'menu', path: '/electron' },
     ]
   }
 }

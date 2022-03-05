@@ -1,8 +1,7 @@
-// preload.js
-
-// All of the Node.js APIs are available in the preload process.
-// It has the same sandbox as a Chrome extension.
+// 预执行一些代码，或者提前加载渲染进程需要的node模块等等
 window.addEventListener('DOMContentLoaded', () => {
+    global.electron = require('electron')
+
     const replaceText = (selector, text) => {
       const element = document.getElementById(selector)
       if (element) element.innerText = text

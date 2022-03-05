@@ -144,6 +144,12 @@ export const ROUTE = [
           },
         ]
       },
+      {
+        path: '/electron',
+        name: 'electron',
+        title: 'electron应用',
+        component: () => import('@views/electron/index.vue')
+      },
     ]
   },
   {

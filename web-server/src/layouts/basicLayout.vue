@@ -114,8 +114,7 @@ export default defineComponent({
     getUserInfoFunc();
     // 通过权限，监控路由
     router.beforeEach((to, from, next) => {
-      // let flag = permission.value.some(item => item.path === to.path);
-      let flag = true
+      let flag = permission.value.some(item => item.path === to.path);
       if(flag) {
         next();
       } else {
